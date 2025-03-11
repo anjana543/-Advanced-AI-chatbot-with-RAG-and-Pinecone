@@ -1,0 +1,39 @@
+{
+  "name": "genai-autocode-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "DEBUG=nock.* jest --ci --silent=false --detectOpenHandles --forceExit",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/community": "^0.3.17",
+    "@langchain/openai": "^0.3.14",
+    "@langchain/pinecone": "^0.1.3",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "install": "^0.13.0",
+    "js-tiktoken": "^1.0.15",
+    "langchain": "^0.3.6",
+    "npm": "^10.9.2",
+    "openai": "^4.71.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.6",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "openai-api-mock": "^0.1.19",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
